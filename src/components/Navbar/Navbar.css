@@ -1,0 +1,11 @@
+
+@media (max-width:300px){
+#box
+{
+  display: block;
+}
+#ul
+{
+  display: block;
+}
+}

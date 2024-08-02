@@ -1,0 +1,18 @@
+@media  (max-width:1024px) {
+    h1{
+        display: none;
+    }
+    };
+    
+@media (max-width:1024px){
+   .map
+   {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    padding:10px;
+    gap:20px;
+   }
+    }
