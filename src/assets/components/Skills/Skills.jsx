@@ -33,7 +33,7 @@ function Skills() {
           <FaMoon />
         </button>
       </div>
-      <div className="side bg-red border-b-2 " style={{ color: text }}>
+      <div className="side " style={{ color: text }}>
         <h1 style={{ color: text }}> Skills </h1>
         <p>
           I am practicing AS a web dev Since 2022 ,I have a Gain lot of skills
@@ -110,7 +110,7 @@ function Skills() {
             <h3>Github</h3>
             <h2 style={{ color: text }}>90%</h2>
             <span className="bar">
-              <span className="github"></span>
+              <span className="git"></span>
             </span>
           </li>
         </div>

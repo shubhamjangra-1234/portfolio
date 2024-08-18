@@ -32,9 +32,6 @@ const Contact = () => {
         </button>
       </div>
       <div className="mx-auto  max-w-7xl ">
-        <h1 style={{color:text}} className="text-center text-3xl border-b-2">
-        "Reach out for inquiries, collaborations, or just to say hello! I look forward to connecting with you and addressing any questions or feedback you may have promptly."
-        </h1>
         <div className="mx-auto max-w-7xl  py-12 rounded-xl md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
             <div className="flex items-center justify-center">

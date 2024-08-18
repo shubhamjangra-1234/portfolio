@@ -17,10 +17,21 @@
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:800px) {
 #box
 {
   height:100%;
   gap:20px;
+}
+}
+@media (max-width: 1024px) {
+  h1 {
+      display: block;
+  }
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+   font-size: xxx-large;
 }
 }

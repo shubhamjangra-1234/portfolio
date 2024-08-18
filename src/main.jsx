@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import IntroSection from './components/homepage/home.jsx'
-import Skills from './components/Skills/Skills.jsx'
-import About from './components/About/About.jsx'
-import Contact from './components/contact/Contact.jsx'
+import IntroSection from './assets/components/homepage/home.jsx'
+import Skills from './assets/components/Skills/Skills.jsx'
+import About from './assets/components/About/About.jsx'
+import Contact from './assets/components/contact/Contact.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>

@@ -34,17 +34,16 @@ function IntroSection() {
           <FaMoon />
         </button>
       </div>
-
       <section className=" w-full  m-0 p-0 flex flex-col md:flex-row items-center justify-around md:p-16   ">
         <div
           id="box"
           className=" w-12/12  p-2 rounded-xl flex-wrap flex flex-row items-center justify-center"
         >
           <div className=" flex justify-center  md:w-1/2 mb-8 md:mb-0">
-            <div className="round  relative h-fit w-fit flex items-center justify-center">
-              <div className="profileCard_container relative p-16 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
+            <div className="round  relative h-fit  flex items-center justify-center">
+              <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
                 <button className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block w-16 h-16 transition-all duration-500 rounded-full z-[2] bg-white p-1">
+                  <span className="block w-14 h-14 transition-all duration-500 rounded-full z-[2] bg-white p-1">
                     <svg viewBox="0 0 128 128">
                       <g fill="#61DAFB">
                         <circle r="11.4" cy="64" cx="64"></circle>
@@ -55,7 +54,7 @@ function IntroSection() {
                 </button>
 
                 <button className="profile_item right-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block  w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-white p-1">
+                  <span className="block  w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-white p-1">
                     <svg
                       viewBox="0 0 16 16"
                       fill="none"
@@ -81,7 +80,7 @@ function IntroSection() {
                 </button>
 
                 <button className="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block  w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-white p-2">
+                  <span className="block  w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-white p-2">
                     <svg
                       viewBox="0 0 16 16"
                       fill="none"
@@ -107,10 +106,10 @@ function IntroSection() {
                 </button>
 
                 <button className="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block overflow-hidden w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-blue-900 p-2">
+                  <span className="block overflow-hidden w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-blue-900 p-2">
                     <svg
-                      width="50px"
-                      height="50px"
+                      width="40px"
+                      height="40px"
                       viewBox="0 0 16 16"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,10 +134,10 @@ function IntroSection() {
                 </button>
 
                 <button className="profile_item bottom-8 -left-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block  w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-white">
+                  <span className="block  w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-white">
                     <svg
-                      width="64px"
-                      height="64px"
+                      width="55px"
+                      height="55px"
                       viewBox="0 0 1024 1024"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="#000000"
@@ -164,13 +163,13 @@ function IntroSection() {
                 </button>
 
                 <button className="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block  w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-white p-2 ">
+                  <span className="block  w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-white p-2 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
-                      width="50"
-                      height="50"
+                      width="42"
+                      height="43"
                       viewBox="0 0 50 50"
                     >
                       <path d="M49.729 11h-.85c-1.051 0-2.041.49-2.68 1.324l-8.7 11.377-8.7-11.377C28.162 11.49 27.171 11 26.121 11h-.85l10.971 14.346L25.036 40h.85c1.051 0 2.041-.49 2.679-1.324L37.5 26.992l8.935 11.684C47.073 39.51 48.063 40 49.114 40h.85L38.758 25.346 49.729 11zM21.289 34.242c-2.554 3.881-7.582 5.87-12.389 4.116C4.671 36.815 2 32.611 2 28.109L2 27h12v0h11l0-4.134c0-6.505-4.818-12.2-11.295-12.809C6.273 9.358 0 15.21 0 22.5l0 5.573c0 5.371 3.215 10.364 8.269 12.183 6.603 2.376 13.548-1.17 15.896-7.256 0 0 0 0 0 0h-.638C22.616 33 21.789 33.481 21.289 34.242zM2 22.5C2 16.71 6.71 12 12.5 12S23 16.71 23 22.5V25H2V22.5z"></path>
@@ -178,14 +177,14 @@ function IntroSection() {
                   </span>
                 </button>
 
-                <button className="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                  <span className="block  w-16 h-16  transition-all duration-500 rounded-full z-[2] bg-white">
+                <button className="profile_item right-[40%] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+                  <span className="block  w-14 h-14  transition-all duration-500 rounded-full z-[2] bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
                       y="0px"
-                      width="64"
-                      height="64"
+                      width="58"
+                      height="58"
                       viewBox="0 0 30 30"
                     >
                       <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
@@ -207,12 +206,12 @@ function IntroSection() {
               </div>
             </div>
           </div>
-          <div className="w-full  md:w-1/2 text-center md:text-left">
+          <div className="w-full h-full md:w-1/2 text-center md:text-left">
             <h1
               className="text-2xl md:text-4xl font-bold  mb-4"
               style={{ color: text }}
             >
-              Hello!{" "}
+              Hello!
             </h1>
             <h1
               className="text-2xl md:text-4xl font-bold mb-4 text overflow-hidden whitespace-nowrap"
@@ -230,7 +229,7 @@ function IntroSection() {
               Let's build something amazing together!
             </p>
 
-            {/* <div className="flex  bg-blue-500 rounded-xl  mt-2 flex-row w-full justify-evenly  p-3 ">
+            <div className="flex  bg-blue-300 rounded-xl  mt-2 flex-row w-full justify-evenly  p-3 ">
               <a
                 className="text-6xl hover:scale-95"
                 href="https://github.com/shubhamjangra-1234"
@@ -249,17 +248,16 @@ function IntroSection() {
               >
                 <FaSquareInstagram />
               </a>
-            </div> */}
+            </div>
             <div className="my-8">
-          <a
-            href="/reactimg/Resume.pdf"
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-200 inline-block"
-            download
-          >
-            Resume
-          </a>
-        </div>
-        
+              <a
+                href="/reactimg/Resume.pdf"
+                className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-200 inline-block"
+                download
+              >
+                Resume
+              </a>
+            </div>
           </div>
         </div>
       </section>

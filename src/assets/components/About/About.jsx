@@ -103,7 +103,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h2 style={{color : head}}  className="text-3xl  border-b-2 font-bold tracking-tighter">
+                <h2 style={{color : head}}  className="text-3xl  border-b-2 border-purple-600 font-bold tracking-tighter">
                   Objectives
                 </h2>
                 <div className="mt-4 space-y-4">
