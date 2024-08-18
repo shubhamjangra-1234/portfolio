@@ -182,7 +182,7 @@ const Contact = () => {
           <circle cx="12" cy="10" r="3"></circle>
         </svg>
         <p style={{color:text}}  className="w-full text-xl font-semibold  ">
-         hause  Address
+         house  Address
         </p>
         <p style={{color:text}} className="text-sm font-medium">
            Ashoka colony, linepar, bahadurgarh, jhajjar(124507)
