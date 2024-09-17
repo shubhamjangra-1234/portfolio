@@ -1,8 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 import { useState } from "react";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
-import "./contact.css"
+import "./contact.css";
 const Contact = () => {
   const [color, SetColor] = useState("#18181b");
   const [text, SetText] = useState("white");
@@ -159,37 +162,45 @@ const Contact = () => {
               alt="Contact us"
               className="hidden max-h-full w-96 rounded-lg object-cover lg:block"
               src="/reactimg/contact.png"
-            /> 
+            />
           </div>
         </div>
       </div>
       <div className=" map w-full flex p-1 justify-evenly align-middle flex-row">
-        <iframe className="rounded-xl  " src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3499.3093063405004!2d76.93314507550367!3d28.71030097562231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDQyJzM3LjEiTiA3NsKwNTYnMDguNiJF!5e0!3m2!1sen!2sin!4v1722417885742!5m2!1sen!2sin" width="800" height="600" fullscreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          className="rounded-xl  "
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3499.3093063405004!2d76.93314507550367!3d28.71030097562231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDQyJzM3LjEiTiA3NsKwNTYnMDguNiJF!5e0!3m2!1sen!2sin!4v1722417885742!5m2!1sen!2sin"
+          width="800"
+          height="600"
+          fullscreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div className=" flex  justify-center align-middle flex-col space-y-3 ">
-        <svg style={{color:text}} 
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="h-5 w-5"
-        >
-          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-          <circle cx="12" cy="10" r="3"></circle>
-        </svg>
-        <p style={{color:text}}  className="w-full text-xl font-semibold  ">
-         house  Address
-        </p>
-        <p style={{color:text}} className="text-sm font-medium">
-           Ashoka colony, linepar, bahadurgarh, jhajjar(124507)
-        </p>
+          <svg
+            style={{ color: text }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-5 w-5"
+          >
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <p style={{ color: text }} className="w-full text-xl font-semibold  ">
+            house Address
+          </p>
+          <p style={{ color: text }} className="text-sm font-medium">
+            Ashoka colony, line par, bahadurgarh, jhajjar(124507)
+          </p>
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 };
