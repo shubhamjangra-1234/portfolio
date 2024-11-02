@@ -38,22 +38,18 @@ h1
 
 .bars
 {
-    width:80%;
+    width:100%;
     margin:30px auto;
-    padding: 30px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid: gap 2rem;
+    grid: gap 4rem;
 }
-.skill li
-{
-    margin:20px 0;
-    padding:10px;
-}
+
 h3
 {
-    color:orange;
-    font-size:x-large;
+    color:gray;
+    font-size:large;
     font-weight: bold;
 }
 
@@ -67,8 +63,8 @@ h2
 {
     background:#353b48;
     display: block;
-    height: 20px;
-    width:80%;
+    height: 5px;
+    width:90%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -83,7 +79,7 @@ h2
 {
     height:20px;
     float:left;
-    background-color:lime;
+    background-color:palegreen;
 }
 .html
 {

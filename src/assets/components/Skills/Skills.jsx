@@ -1,203 +1,204 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./Skills.css";
-import { useState } from "react";
+
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 
 function Skills() {
-  const [color, SetColor] = useState("#18181b");
-  const [text, SetText] = useState("white");
-
-  const dark = function () {
-    SetColor("#18181b");
-    SetText("white");
-  };
-  const light = function () {
-    SetColor("whitesmoke");
-    SetText("black");
-  };
-
   return (
-    <div style={{ backgroundColor: color }}>
-      <div className="w-28 p-3 flex  justify-between">
-        <button
-          className="text-3xl hover:scale-105  bg-orange-400 w-10 p-1  rounded-xl flex justify-center"
-          onClick={dark}
-        >
-          <FaSun />
-        </button>
-        <button
-          className="text-3xl hover:scale-105  bg-orange-400 w-10 p-1  rounded-xl flex justify-center"
-          onClick={light}
-        >
-          <FaMoon />
-        </button>
-      </div>
-      <div className="side " style={{ color: text }}>
-        <h1 style={{ color: text }}> Skills </h1>
-        <p>
-          I am practicing AS a web dev Since 2022 ,I have a Gain lot of skills
-          and knowledge in WEb dev Filed.
-        </p>
-        <p>I am trying to keep learning new Skills and technologies</p>
-      </div>
-      <div className="skills  flex justify-center flex-row">
-        <div className="bars  flex-wrap justify-between align-middle flex-col">
-          <li>
-            <h3>html </h3>
-            <h2 style={{ color: text }}>100%</h2>
-            <span className="bar">
-              <span className="html"></span>
-            </span>
-          </li>
-          <li>
-            <h3>css</h3>
-            <h2 style={{ color: text }}>90%</h2>
-            <span className="bar">
-              <span className="css"></span>
-            </span>
-          </li>
-          <li>
-            <h3>javascript</h3>
-            <h2 style={{ color: text }}>70%</h2>
-            <span className="bar">
-              <span className="javascript"></span>
-            </span>
-          </li>
-          <li>
-            <h3>react</h3>
-            <h2 style={{ color: text }}>80%</h2>
-            <span className="bar">
-              <span className="react"></span>
-            </span>
-          </li>
-          <li>
-            <h3>node</h3>
-            <h2 style={{ color: text }}>80%</h2>
-            <span className="bar">
-              <span className="node"></span>
-            </span>
-          </li>
-          <li>
-            <h3>express</h3>
-            <h2 style={{ color: text }}>80%</h2>
-            <span className="bar">
-              <span className="express"></span>
-            </span>
-          </li>
-          <li>
-            <h3>mongoDb</h3>
-            <h2 style={{ color: text }}>60%</h2>
-            <span className="bar">
-              <span className="mongodb"></span>
-            </span>
-          </li>
-          <li>
-            <h3>Tailwind</h3>
-            <h2 style={{ color: text }}>90%</h2>
-            <span className="bar">
-              <span className="tailwind"></span>
-            </span>
-          </li>
-          <li>
-            <h3>Git</h3>
-            <h2 style={{ color: text }}>80%</h2>
-            <span className="bar">
-              <span className="git"></span>
-            </span>
-          </li>
-          <li>
-            <h3>Github</h3>
-            <h2 style={{ color: text }}>90%</h2>
-            <span className="bar">
-              <span className="git"></span>
-            </span>
-          </li>
+    <div className="bg-gradient-to-t from-zinc-950 to-zinc-900 to-zinc-800 p-4">
+      <div className=" lg:ml-56 ">
+        <div className="side  ">
+          <h2 className="text-zinc-500 mb-5 text-3xl font-bold tracking-tighter md:text-4xl/tight">
+            My Skills
+          </h2>
+          <p>
+            I am practicing AS a web dev Since 2022 ,I have Gain a lot of skills
+            and knowledge in dev Filed.
+          </p>
+          <p>I am trying to keep learning new Skills and technologies</p>
         </div>
-      </div>
+        <div className="skills  flex justify-center flex-row">
+          <div className="bars  flex-wrap justify-between align-middle flex-col">
+            <li className="h-10 flex my-5 justify-start items-center   ">
+              <p className="text-blue-200 font-bold text-xl lg:text-3xl">
+                frontend
+              </p>
+            </li>
+            <li></li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">html </h3>
+              <h2 className="text-right mr-0">100%</h2>
+              <span className="bar">
+                <span className="html"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">css</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">javascript</h3>
+              <h2 className="text-right mr-0">70%</h2>
+              <span className="bar">
+                <span className="javascript"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">react</h3>
+              <h2 className="text-right mr-0">80%</h2>
+              <span className="bar">
+                <span className="react"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Tailwind</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="tailwind"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Reactive Apps</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="html"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">UI&ux</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="html"></span>
+              </span>
+            </li>
+            <li></li>
+            <li className="h-10 flex my-5 justify-start items-center   ">
+              <p className="text-blue-200 font-bold text-xl lg:text-3xl">
+                backend
+              </p>
+            </li>
+            <li></li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">node</h3>
+              <h2 className="text-right mr-0">80%</h2>
+              <span className="bar">
+                <span className="node"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">express</h3>
+              <h2 className="text-right mr-0">80%</h2>
+              <span className="bar">
+                <span className="express"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Api Handeling</h3>
+              <h2 className="text-right mr-0">60%</h2>
+              <span className="bar">
+                <span className="mongodb"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">mongoDb</h3>
+              <h2 className="text-right mr-0">60%</h2>
+              <span className="bar">
+                <span className="mongodb"></span>
+              </span>
+            </li>
 
-      <div className="w-full text-center">
-        <p style={{ color: text }} className="font-bold text-5xl">Services</p>
-      </div>
-      <div className="w-full h-fit mt-8 p-12 gap-10 justify-evenly flex flex-wrap">
-        <div className=" duration-300 relative h-[400px] w-[300px] rounded-md hover:scale-105 ">
-          <img
-            src="/reactimg/team.jpeg"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">
-              Team Management
-            </h1>
-            <p className="mt-2 text-sm text-gray-300">
-              i am good in team management and performing my role in a team
-              project.
-            </p>
+            <li className="h-10 flex my-5 justify-start items-center   ">
+              <p className="text-blue-200 font-bold text-xl lg:text-3xl">
+                other skills
+              </p>
+            </li>
+            <li></li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Git</h3>
+              <h2 className="text-right mr-0">80%</h2>
+              <span className="bar">
+                <span className="git"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Github</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left">Deployment</h3>
+              <h2 className="text-right mr-0">90%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
           </div>
         </div>
-        <div className="relative hover:scale-105 duration-300 h-[400px] w-[300px] rounded-md">
-          <img
-            src="/reactimg/responsive.png"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">
-              Responsive web Design
-            </h1>
-            <p className="mt-2 text-sm text-gray-300">
-              I built responsive web designs suitable for of devices and also
-              user friendly.
-            </p>
-          </div>
+        <div>
+          <p className="text-zinc-100">
+            I just trying to learn new things and be better day-by-day
+          </p>
         </div>
-        <div className="relative object-cover  hover:scale-105 duration-300 h-[400px] w-[300px] rounded-md">
-          <img
-            src="/reactimg/problem.png"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">
-              Problem SOLving
-            </h1>
-            <p className="mt-2 text-sm text-gray-300">
-              i can manage and face the problems with ideas.
-            </p>
-          </div>
-        </div>
-        <div className="relative hover:scale-105 duration-300 h-[400px] w-[300px] rounded-md">
-          <img
-            src="/reactimg/Development.png"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">Web Development</h1>
-            <p className="mt-2 text-sm text-gray-300">
-              i can built user friendly app and website with effective designs.
-            </p>
-          </div>
-        </div>
-        <div className="relative hover:scale-105 duration-300 h-[400px] w-[300px] rounded-md">
-          <img
-            src="/reactimg/Api.png"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">Api Handling</h1>
-            <p className="mt-2 text-sm text-gray-300">
-              i also know the working and can handle the apis
-            </p>
-          </div>
-        </div>
+        <projects>
+          <section className="flex flex-col items-center justify-center px-6 py-12 md:px-12 lg:px-24">
+            <h2 className="text-zinc-500 text-3xl mb-10 font-bold tracking-tighter md:text-4xl/tight">
+              Projects
+            </h2>
+
+            <ul className="list-none text-zinc-300 max-w-2xl space-y-4">
+              <li>
+                <span className="font-semibold text-green-400">
+                  Wide Range of Projects:
+                </span>{" "}
+                Extensive experience in developing various web applications
+                focused on functionality and user experience.
+              </li>
+              <li>
+                <span className="font-semibold text-green-400">
+                  Core Skills Demonstrated:
+                </span>
+                <ul className="list-none ml-4 space-y-2">
+                  <li> CRUD Operations</li>
+                  <li> UI/UX Design</li>
+                  <li> Responsive Design</li>
+                  <li> Routing Fundamentals</li>
+                </ul>
+              </li>
+              <li>
+                <span className="font-semibold text-green-400">
+                  Backend and Frontend Expertise:
+                </span>
+                <ul className="list-none ml-4 space-y-2">
+                  <li>Backend Logic & API Management</li>
+                  <li>Frontend Design & Responsiveness</li>
+                </ul>
+              </li>
+              <li>
+                <span className="font-semibold text-green-400">
+                  MERN Stack Proficiency:
+                </span>{" "}
+                Advanced skills across MongoDB, Express.js, React, and Node.js
+                for creating full-stack applications with scalability.
+              </li>
+            </ul>
+
+            <a
+              href="https://github.com/your-github-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 px-6 py-3 text-white border bg-gray-800 hover:bg-zinc-900 rounded-md shadow-lg text-center transition duration-300 ease-in-out"
+            >
+              Visit My GitHub Projects
+            </a>
+          </section>
+        </projects>
       </div>
     </div>
   );

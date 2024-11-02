@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contain {
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: -0.5em;
+  font: inherit;
+  font-size: 4em;
+  color: #444;
+  background: none;
+  border: none;
+  translate: -50% -50%;
+  opacity: 0.5;
+  animation: restart 1s 16s forwards;
+  transition: color 0.9s;
+
+  &:hover {
+    color: #ed1313;
+  }
+
+  &:active {
+    opacity: 1;
+    color: #fff;
+
+    &,
+    & ~ .typing::before,
+    & ~ .typing::after {
+      animation: none;
+    }
+  }
+}
+
+@keyframes restart {
+  to {
+    color: #fff;
+  }
+}
+
+.typing {
+  font-size: 4em;
+  text-align: center;
+  font-family: "IM Fell English", serif;
+  &::before {
+    content: "";
+    animation: text 14.5s 1s step-end forwards;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    translate: -0.2em;
+    animation: chars 5s 0.5s step-end 3;
+  }
+}
+
+@keyframes text {
+  0% {
+    content: "S";
+  }
+  30% {
+    content: "SH";
+  }
+  50% {
+    content: "SHU";
+  }
+  60% {
+    content: "SHUB";
+  }
+  70% {
+    content: "SHUBH";
+  }
+  80% {
+    content: "SHUBHA ";
+  }
+  100% {
+    content: "SHUBHAM";
+  }
+}
+
+@keyframes chars {
+  0% {
+    content: "a";
+  }
+  10% {
+    content: "O";
+  }
+
+ 
+
+  50% {
+    content: "Y";
+  }
+
+ 
+
+
+  80% {
+    content: "u";
+  }
+
+  98% {
+    content: "K";
+  }
+}
