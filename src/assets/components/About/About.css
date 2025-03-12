@@ -1,4 +1,46 @@
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+.offset {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
 
+.line::before{
+content: " ";
+position: "absolute";
+top:0;
+background: #df0a0a;
+
+}
+.offset {
+  background: none;
+  border: 1px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 4px 10px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -327,12 +369,7 @@
        padding-left: 25px;
      }
    }    */
-   *{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+  
   
   /* h1{
     font-size: 2.5rem;
@@ -515,15 +552,15 @@
       margin: 0 0 2rem 0;
     }
   }
-  @import url("https://fonts.googleapis.com/css?family=PT+Sans");
+  /* @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 ::selection {
   background: #272838;
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  /* font-family:; */
   text-align: center;
   text-decoration: none;
   -webkit-box-sizing: border-box;

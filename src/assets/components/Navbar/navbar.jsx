@@ -3,16 +3,22 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Skills from "./../Skills/Skills";
+import Dock from './BitsUI';
 import { FaUser, FaBriefcase, FaEnvelope, FaPhone } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { SlSocialInstagram, SlSocialGithub } from "react-icons/sl";
 import {
   FcShop,
-  FcGraduationCap,
-  FcAbout,
+  // FcGraduationCap,
+  // FcAbout,
   FcVoicePresentation,
 } from "react-icons/fc";
-
+import { VscHome, VscArchive, VscAccount, VscSettingsGear } from "react-icons/vsc";
+import { SiHyperskill } from "react-icons/si";
+import { CiUser } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { RiContactsLine } from "react-icons/ri";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1050);
@@ -29,13 +35,13 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   return (
     <>
       <button
         className={`fixed top-4 right-4 z-50 ${
           isLargeScreen ? "hidden" : ""
-        } bg-gray-800 text-white p-2 rounded-md`}
+        } bg-zinc-900 shadow-md shadow-zinc-700 text-zinc-200 p-2 rounded-md`}
         onClick={toggleMenu}
       >
         <svg
@@ -55,7 +61,7 @@ const Navbar = () => {
       </button>
 
       <nav
-        className={`overflow-hidden ml-2 mt-2 fixed w-52 top-0 left-0 bg-gradient-to-t from-zinc-950 to-zinc-900 to-zinc-800 to-zinc-600 text-zinc-300 p-5 transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`overflow-hidden ml-2 mt-2 fixed w-52 top-0 left-0 bg-gradient-to-t from-zinc-950 to-zinc-900 to-zinc-800 text-zinc-300 p-5 transform transition-transform duration-300 ease-in-out z-40 ${
           isOpen || isLargeScreen ? "translate-x-0" : "-translate-x-full"
         }`}
         style={{
@@ -64,9 +70,9 @@ const Navbar = () => {
         }}
       >
         <div className="flex flex-col h-full  ">
-          <div className="flex justify-center rounded-3xl shadow-transparent shadow-gray-200">
-            <div className="wrapper h-full p-2 bg-zinc-900">
-              <div className="image-wrapper">
+          <div className="flex justify-center rounded-xl">
+            <div className="p-2">
+              <div className="">
                 <a href="/">
                   <span className="flex justify-center ">
                     <svg
@@ -114,8 +120,8 @@ const Navbar = () => {
                     </svg>
                   </span>
                 </a>
-                <h1 className="name text-zinc-600">Shubham</h1>
-                <p className="description text-zinc-600 ">Designer | Dreamer</p>
+                <h1 className="font-sans text-3xl  text-zinc-600">Shubham</h1>
+                <p className="description text-sm text-zinc-600 ">Developer | Dreamer </p>
 
                 <ul className="social-media flex justify-evenly my-4">
                   <a href="https://github.com/shubhamjangra-1234">
@@ -128,43 +134,43 @@ const Navbar = () => {
                     <IoCallOutline className="text-2xl" />
                   </a>
                 </ul>
+        
               </div>
             </div>
           </div>
           <div className="py-2">
             <NavLink
               to="/main"
-              className="flex items-center py-3 hover:bg-gray-700 rounded"
+              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
             >
-              <FcShop className="h-8 w-8 mr-8 " />
-              <p className="font-bold text-base" style={{ font: "cursive" }}>
-                {" "}
+              <VscHome className="h-7 w-7 mr-8 " />
+              <p className=" text-base  ">
                 Home
               </p>
             </NavLink>
 
             <NavLink
               to="/Skills"
-              className="flex items-center py-3 hover:bg-gray-700 rounded"
+              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
             >
-              <FcGraduationCap className="h-8 mr-8 w-8 " />
-              <p className="font-bold text-base ">Skills</p>
+              < LiaLaptopCodeSolid  className="h-7 mr-7 w-8 " />
+              <p className=" text-base  ">Skills</p>
             </NavLink>
 
             <NavLink
               to="/about"
-              className="flex items-center py-3 hover:bg-gray-700 rounded"
+              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
             >
-              <FcAbout className="h-8 w-8 mr-8  " />
-              <p className="font-bold text-base">About</p>
+              <CiUser className="h-7 w-7 mr-8 " />
+              <p className=" ">About</p>
             </NavLink>
 
             <NavLink
               to="/contact"
-              className="flex items-center py-3 hover:bg-gray-700 rounded"
+              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
             >
-              <FcVoicePresentation className="h-8 w-8 mr-8  " />
-              <p className="font-bold text-base">Contact</p>
+              <CiMail className="h-7 w-7 mr-8  " />
+              <p className=" text-base ">Contact</p>
             </NavLink>
           </div>
         </div>

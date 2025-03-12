@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <footer className=" h-full bg-gradient-to-t from-zinc-950 to-zinc-800 to-zinc-750 text-white py-8 transition-all duration-300 ease-in-out">
+      <footer className=" h-full bg-gradient-to-b from-zinc-950 to-zinc-800 to-zinc-750 text-white py-8 transition-all duration-300 ease-in-out">
         <div className="w-5/6  container mx-auto lg:ml-56 ">
           <div className="flex flex-wrap justify-between items-start">
             <div className="w-full sm:w-1/2  lg:w-1/3 mb-6 lg:mb-0">
