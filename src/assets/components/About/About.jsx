@@ -84,7 +84,7 @@ const About = () => {
                 </div>
 
                 <div className="my-8 text-left">
-                  <a href="https://drive.google.com/file/d/10oOEq6ILNC2oUbQLfRlaj_KH4X5M0uct/view?usp=drive_link">
+                  <a href="https://drive.google.com/file/d/12ZirlCBB-PeLpOyjdRpm3A05ekMg7RzE/view?usp=drive_link">
                     <button className="offset">
                       {" "}
                       <svg
@@ -102,7 +102,6 @@ const About = () => {
                           d="M12 12v7m0 0-2.25-2.333M12 19l2.25-2.333M6.6 17.833c-1.988 0-3.6-1.641-3.6-3.666 0-1.669 1.094-3.077 2.592-3.521A.15.15 0 0 0 5.7 10.5C5.7 7.462 8.118 5 11.1 5s5.4 2.462 5.4 5.5a.09.09 0 0 0 .11.089q.382-.088.79-.089c1.988 0 3.6 1.642 3.6 3.667s-1.612 3.666-3.6 3.666"
                         ></path>
                       </svg>
-                      {/* <p className="text-sm font-bold">C V</p> */}
                     </button>
                   </a>
                 </div>
