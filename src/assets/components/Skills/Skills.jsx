@@ -85,7 +85,7 @@ function Skills() {
           <p className="text-zinc-300 text-left   text-sm font-sans">
             -&gt; I am trying to keep learning new Skills and technologies
           </p>
-          <div className="sm:col-span-2 p-6 rounded-xl border-zinc-500">
+          <div className="sm:col-span-2 py-4 px-2 rounded-xl border-zinc-500">
             <div className="">
               <div className="flex flex-wrap gap-2">
                 <li
@@ -188,7 +188,7 @@ function Skills() {
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit sm:text-sm bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
                 Reactive Apps
               </h3>
               <h2 className="text-right  font-mono text-red-500 mr-0">90%</h2>
@@ -231,7 +231,7 @@ function Skills() {
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
+              <h3 className="text-left  sm:text-sm w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
                 Api Handeling
               </h3>
               <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>

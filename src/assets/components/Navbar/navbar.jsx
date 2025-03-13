@@ -61,7 +61,7 @@ const Navbar = () => {
       </button>
 
       <nav
-        className={`overflow-hidden ml-2 mt-2 fixed w-52 top-0 left-0 bg-gradient-to-t from-zinc-950 to-zinc-900 to-zinc-800 text-zinc-300 p-5 transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`overflow-hidden ml-2 mt-2 fixed w-52 top-0 left-0 bg-gradient-to-t from-zinc-950 to-zinc-900 to-zinc-800 text-zinc-300 p-5 transform transition-transform duration-300 ease-in-out z-40 backdrop-filter backdrop-blur-lg bg-opacity-30 ${
           isOpen || isLargeScreen ? "translate-x-0" : "-translate-x-full"
         }`}
         style={{
@@ -69,12 +69,12 @@ const Navbar = () => {
           height: "98vh",
         }}
       >
-        <div className="flex flex-col h-full  ">
+        <div className="flex flex-col h-full">
           <div className="flex justify-center rounded-xl">
             <div className="p-2">
               <div className="">
                 <a href="/">
-                  <span className="flex justify-center ">
+                  <span className="flex justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="4rem"
@@ -120,8 +120,10 @@ const Navbar = () => {
                     </svg>
                   </span>
                 </a>
-                <h1 className="font-sans text-3xl  text-zinc-600">Shubham</h1>
-                <p className="description text-sm text-zinc-600 ">Developer | Dreamer </p>
+                <h1 className="font-sans text-3xl text-zinc-600">Shubham</h1>
+                <p className="description text-sm text-zinc-600">
+                  Developer | Dreamer{" "}
+                </p>
 
                 <ul className="social-media flex justify-evenly my-4">
                   <a href="https://github.com/shubhamjangra-1234">
@@ -134,41 +136,39 @@ const Navbar = () => {
                     <IoCallOutline className="text-2xl" />
                   </a>
                 </ul>
-        
               </div>
             </div>
           </div>
           <div className="py-2">
             <NavLink
               to="/main"
-              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
+              className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
-              <VscHome className="h-7 w-7 mr-8 " />
-              <p className=" text-base  ">
-                Home
-              </p>
+              <VscHome className="h-7 w-7 mr-8" />
+              <p className="text-base">Home</p>
             </NavLink>
 
             <NavLink
               to="/Skills"
-              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
+              className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
-              < LiaLaptopCodeSolid  className="h-7 mr-7 w-8 " />
-              <p className=" text-base  ">Skills</p>
+              <LiaLaptopCodeSolid className="h-7 mr-7 w-8" />
+              <p className="text-base">Skills</p>
             </NavLink>
 
             <NavLink
               to="/about"
-              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
+              className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
-              <CiUser className="h-7 w-7 mr-8 " />
-              <p className=" ">About</p>
+              <CiUser className="h-7 w-7 mr-8" />
+              <p className="">About</p>
             </NavLink>
 
             <NavLink
               to="/contact"
-              className="flex items-center border border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded"
+              className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
+              
               <CiMail className="h-7 w-7 mr-8  " />
               <p className=" text-base ">Contact</p>
             </NavLink>

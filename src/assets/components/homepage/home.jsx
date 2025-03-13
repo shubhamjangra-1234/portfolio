@@ -33,7 +33,7 @@ function IntroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
               >
-                <h1 className="text-left  overflow-hidden whitespace-nowrap text-xl sm:text-3xl md:text-4xl lg:text-4xl font-serif text-zinc-200">
+                <h1 className="text-left  overflow-hidden whitespace-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-serif text-zinc-200">
                   hi! Coders I am shubham.
                 </h1>
                 <p className="text-left mt-2 w-fit py-1 px-3 rounded-lg overflow-hidden bg-blue-100 whitespace-nowrap text-sm sm:text-xl md:text-sm lg:text-md mb-4 text-blue-500">
@@ -71,7 +71,7 @@ function IntroSection() {
               <div className="mt-5 lg:mt-10 w-full overflow-hidden">
                 <Slider />
               </div>
-              <div className="flex flex-wrap gap-4 justify-center items-center p-4">
+              <div className="flex flex-wrap gap-4 justify-center items-center p-2">
                 <div>
                   <div className="p-6 rounded-xl border border-zinc-500">
                     <ul className="space-y-2">
