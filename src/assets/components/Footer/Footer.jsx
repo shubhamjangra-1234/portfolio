@@ -44,7 +44,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/skills"
+                    href="#skills"
                     className="hover:text-gray-300 text-xs text-zinc-400"
                   >
                     Skills
@@ -52,7 +52,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/about"
+                    href="#about"
                     className="hover:text-gray-300 text-xs text-zinc-400"
                   >
                     About
@@ -60,7 +60,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/contact"
+                    href="#contact"
                     className="hover:text-gray-300 text-xs text-zinc-400"
                   >
                     contact

@@ -31,27 +31,69 @@ import "react-vertical-timeline-component/style.min.css";
 import NonPro from "./Non-pro";
 
 const About = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
   return (
-    <section
-    
-    className="w-full bg-zinc-800">
-      <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className=" lg:ml-56 item p-6 mx-auto md:py-5 lg:py-10">
+    <section id="about" className="w-full">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        className=" lg:ml-56 item mx-auto"
+      >
         <div className="grid grid-cols-1 gap-6">
-          <div className="space-y-6">
+          <div className="p-2">
+          <div className=" flex justify-between space-x-2 items-center  text-zinc-200 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
+            About
+            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+    id="Layer_1"
+    width="44"
+    height="44"
+    fill="#000"
+    version="1.1"
+    viewBox="0 0 503.68 503.68"
+  >
+    <g id="SVGRepo_iconCarrier">
+      <path
+        fill="#FFD7D7"
+        d="M251.84 328.746c5.12 0 8.533 4.267 8.533 8.533s-3.413 8.533-8.533 8.533-8.533-4.267-8.533-8.533 3.413-8.533 8.533-8.533"
+      ></path>
+      <path
+        fill="#F2EDDA"
+        d="M499.307 38.613v256H379.84V72.746L337.173 4.48h128c17.067 0 34.134 17.066 34.134 34.133M123.84 260.48v34.133H4.373v-256C4.373 21.546 21.44 4.48 38.507 4.48h85.333v256m213.333-256-42.667 68.267v221.867h-34.133V4.48z"
+      ></path>
+      <path fill="#ECF4F7" d="m337.173 4.48 42.667 68.266h-85.333z"></path>
+      <path
+        fill="#80D6FA"
+        d="M337.173 294.613h-42.666V72.746h85.333v221.867z"
+      ></path>
+      <path fill="#ECF4F7" d="M209.173 448.213h85.334v-68.266h-85.334z"></path>
+      <path
+        fill="#FFE079"
+        d="M123.84 226.346V4.48h136.533v290.133H123.84V260.48z"
+      ></path>
+      <g fill="#ECF4F7">
+        <path d="M499.307 294.613v51.2c0 17.067-17.067 34.133-34.133 34.133H38.507c-17.067 0-34.133-17.067-34.133-34.133v-51.2h494.933M465.173 490.88v8.533h-68.267v-8.533c0-14.507 11.093-25.6 25.6-25.6h17.067c14.507 0 25.6 11.093 25.6 25.6"></path>
+      </g>
+      <path
+        fill="#51565F"
+        d="M465.173 503.68h-68.267c-2.56 0-4.267-1.707-4.267-4.267v-8.533c0-16.213 13.653-29.867 29.867-29.867h17.067c16.213 0 29.867 13.653 29.867 29.867v8.533c0 2.56-1.707 4.267-4.267 4.267m-64-8.533h59.733v-4.267c0-11.947-9.387-21.333-21.333-21.333h-17.067c-11.947 0-21.333 9.387-21.333 21.333zm-55.466 8.533h-307.2c-2.56 0-4.267-1.707-4.267-4.267s1.707-4.267 4.267-4.267h12.8v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h25.6v-12.8c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v12.8h12.8c2.56 0 4.267 1.707 4.267 4.267s-1.713 4.267-4.273 4.267m-51.2-51.2c-2.56 0-4.267-1.707-4.267-4.267V414.08c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v34.133c-.001 2.56-1.707 4.267-4.267 4.267m-85.334 0c-2.56 0-4.267-1.707-4.267-4.267V414.08c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v34.133c0 2.56-1.707 4.267-4.267 4.267m256-68.267H38.507c-19.627 0-38.4-18.773-38.4-38.4v-51.2c0-2.56 1.707-4.267 4.267-4.267h460.8c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267H8.64v46.933c0 14.507 15.36 29.867 29.867 29.867h426.667c14.507 0 29.867-15.36 29.867-29.867v-307.2c0-14.507-15.36-29.867-29.867-29.867H379.84c-2.56 0-4.267-1.707-4.267-4.267S377.28.212 379.84.212h85.333c19.627 0 38.4 18.773 38.4 38.4v307.2c0 19.628-18.773 38.401-38.4 38.401M251.84 350.08c-6.827 0-12.8-5.973-12.8-12.8s5.973-12.8 12.8-12.8 12.8 5.973 12.8 12.8c0 6.826-5.973 12.8-12.8 12.8m0-17.067c-2.56 0-4.267 1.707-4.267 4.267s1.707 4.267 4.267 4.267 4.267-1.707 4.267-4.267-1.707-4.267-4.267-4.267m128-68.267c-2.56 0-4.267-1.707-4.267-4.267v-153.6c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v153.6c0 2.561-1.707 4.267-4.267 4.267m-42.667 0c-2.56 0-4.267-1.707-4.267-4.267v-153.6c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v153.6c0 2.561-1.707 4.267-4.267 4.267m-42.666 0c-2.56 0-4.267-1.707-4.267-4.267V72.746c0-.853 0-1.707.853-2.56L333.76 1.92c1.707-2.56 5.973-2.56 6.827 0l42.667 68.267c.853 1.707.853 2.56 0 4.267s-2.56 2.56-3.413 2.56h-51.2c-2.56 0-4.267-1.707-4.267-4.267s1.707-4.267 4.267-4.267h43.52l-34.987-56.32-38.4 61.44v186.88c-.001 2.56-1.707 4.266-4.267 4.266m-34.134 0c-2.56 0-4.267-1.707-4.267-4.267V8.746h-128v42.667h46.933c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-46.933v25.6h12.8c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-12.8v25.6h12.8c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-12.8v25.6h46.933c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-46.933v25.6h12.8c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-12.8v25.6h12.8c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-12.8v29.867c0 2.56-1.707 4.267-4.267 4.267s-4.267-1.707-4.267-4.267v-256c0-2.56 1.707-4.267 4.267-4.267h136.533c2.56 0 4.267 1.707 4.267 4.267v256c.001 2.556-1.706 4.262-4.266 4.262m-256 0c-2.56 0-4.267-1.707-4.267-4.267V38.613c0-19.627 18.773-38.4 38.4-38.4h51.2c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-51.2C24 8.746 8.64 24.106 8.64 38.613V260.48c0 2.56-1.707 4.266-4.267 4.266"
+      ></path>
+    </g>
+  </svg>
+          </div>
             <div>
-              <div className="">
-                <h2 className="text-green-500 text-left text-md   md:text-md/tight">
-                  Hey!
-                </h2>
-                <h2 className="text-zinc-200 text-left text-2xl  md:text-3xl/tight">
-                  I&apos;m Shubham Jangra
-                </h2>
-                <div className="my-4 space-y-4">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={fadeIn}
+                className="my-4 space-y-4">
                   <p className="font-mono text-md mt-8 text-left sm:text-lg md:text-sm text-gray-200">
                     -&gt; Graduated from{" "}
                     <span className="font-semibold text-[#36cc65]">
@@ -81,7 +123,7 @@ const About = () => {
                     digital solutions while continuously advancing my skills and
                     knowledge.{" "}
                   </p>
-                </div>
+               
 
                 <div className="my-8 text-left">
                   <a href="https://drive.google.com/file/d/12ZirlCBB-PeLpOyjdRpm3A05ekMg7RzE/view?usp=drive_link">
@@ -105,7 +147,7 @@ const About = () => {
                     </button>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="w-full ">
               <h2 className="text-gray-100 w-fit text-left text-2xl mb-10 font-times border-b border-dashed border-zinc-300   md:text-2xl/tight">
@@ -140,7 +182,7 @@ const About = () => {
                     </p>
                   </div>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
+                {/* <VerticalTimelineElement
                   contentStyle={{
                     background: "#b0eec3",
                     color: "#fff",
@@ -178,7 +220,7 @@ const About = () => {
                       <b>UI/UX Design</b>: Responsive Design, Flexbox/Grid
                     </li>
                   </ul>
-                </VerticalTimelineElement>
+                </VerticalTimelineElement> */}
                 <VerticalTimelineElement
                   contentStyle={{
                     background: "#c9edef",
@@ -202,7 +244,7 @@ const About = () => {
 
                   <p className="text-zinc-500 font-mono text-sm">Fresher</p>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
+                {/* <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{
                     background: "#b0eec3",
@@ -223,7 +265,7 @@ const About = () => {
                     Programming, UpSkilling, Photography, Problem Solving, UI/UX
                     Design, Web Development
                   </p>
-                </VerticalTimelineElement>
+                </VerticalTimelineElement> */}
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   contentStyle={{
@@ -252,17 +294,17 @@ const About = () => {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   contentStyle={{
-                    background: "#b0eec3",
+                    background: "#c9edef",
                     color: "#fff",
                     boxShadow: "1px 1px 4px #27272a ",
                   }}
                   contentArrowStyle={{
-                    borderRight: "10px solid #b0eec3 ",
+                    borderRight: "10px solid #c9edef ",
                   }}
-                  iconStyle={{ background: "#b0eec3", color: "white" }}
+                  iconStyle={{ background: "#c9edef", color: "white" }}
                   icon={<FcMindMap />}
                 >
-                  <h3 className="vertical-timeline-element- text-md text-green-500 ">
+                  <h3 className="vertical-timeline-element- text-md text-blue-500 ">
                     Personal Interests
                   </h3>
 
@@ -279,7 +321,7 @@ const About = () => {
                 Non-Professional Life
               </h2>
               <div className="space-y-4">
-                <p className="font-mono text-md text-left sm:text-lg md:text-sm text-gray-200">
+                <p className=" text-md text-left sm:text-lg md:text-sm text-gray-200">
                   In my free time, I enjoy exploring new technologies and
                   working on personal projects to enhance my skills. I have a
                   passion for photography and love capturing moments that tell a
@@ -288,7 +330,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-            
             <NonPro />
           </div>
         </div>

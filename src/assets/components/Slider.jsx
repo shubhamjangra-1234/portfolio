@@ -97,7 +97,7 @@ const BrandSlider = () => {
       >
         {brands.concat(brands).map((brand, index) => (
           <div
-            className="w-20 rounded-xl h-10 m-2 flex items-center justify-center flex-shrink-0"
+            className="w-20  rounded-xl h-10 m-2 flex items-center justify-center flex-shrink-0"
             key={index}
           >
             <img

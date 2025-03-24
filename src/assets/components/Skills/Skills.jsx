@@ -7,17 +7,24 @@ import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 
 function Skills() {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
   return (
-    <div className="p-4 bg-zinc-800">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+    <div className="p-2">
+      <div
+        
+        id="skills"
         className=" lg:ml-56 "
       >
-        <div className=" text-left  ">
-          <div className=" flex justify-between space-x-2 items-center  w-fit  text-zinc-200 text-left py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        className=" text-left  ">
+          <div className=" flex justify-between space-x-2 items-center  text-zinc-200 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
             My Capabilities
             <svg
               width="64px"
@@ -78,16 +85,13 @@ function Skills() {
             </svg>
           </div>
 
-          <p className="text-zinc-300 text-left   text-sm font-sans">
-            -&gt; I am practicing AS a web dev Since 2022 ,I have Gain a lot of
+          <p className="text-zinc-300 text-center   text-sm font-sans">
+             I am trying to keep learning new Skills and technologies  I am practicing AS a web dev Since 2022 ,I have Gain a lot of
             skills and knowledge in dev Field.
           </p>
-          <p className="text-zinc-300 text-left   text-sm font-sans">
-            -&gt; I am trying to keep learning new Skills and technologies
-          </p>
-          <div className="sm:col-span-2 py-4 px-2 rounded-xl border-zinc-500">
+          <div className="sm:col-span-2 py-4 rounded-xl border-zinc-500">
             <div className="">
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4">
                 <li
                   data-aos="zoom-in"
                   className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
@@ -133,7 +137,7 @@ function Skills() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="skills  flex justify-center flex-row">
           <div className="bars  flex-wrap justify-between align-middle flex-col">
             <li className="h-10 flex mb-4 justify-start items-center   ">
@@ -200,7 +204,7 @@ function Skills() {
               <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
                 UI&ux
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">90%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
               <span className="bar">
                 <span className="html"></span>
               </span>
@@ -293,7 +297,12 @@ function Skills() {
             </li>
           </div>
         </div>
-        <div>
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        >
           <p className="text-zinc-400 bg-zinc-700 rounded-xl text-sm p-4 text-left ">
             I just trying to learn new things and be better day by day.
             Currently, I’m focused on hands-on projects that allow me to explore
@@ -301,8 +310,13 @@ function Skills() {
             collaborating with others gives me real-world insights that
             continuously shape my growth and improve my craft.
           </p>
-        </div>
-        <projects>
+        </motion.div>
+        <motion.projects
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        >
           <section className="flex flex-col items-start px-2 my-4 py-2 md:px-2 lg:px-2">
             <h2 className="text-gray-200 text-left text-2xl mb-10 font-times border-b border-dashed border-zinc-300 font-bold tracking-tighter md:text-3xl/tight">
               Projects
@@ -386,8 +400,8 @@ function Skills() {
               </div>
             </a>
           </section>
-        </projects>
-      </motion.div>
+        </motion.projects>
+      </div>
     </div>
   );
 }

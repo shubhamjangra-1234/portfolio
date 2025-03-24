@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 // import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -5,11 +6,13 @@ import Slider from "../Slider";
 // import { FaSquareInstagram } from "react-icons/fa6";
 import "./home.css";
 import { motion } from "framer-motion";
+import Skills from "../Skills/Skills";
+import About from "../About/About";
+import Contact from "../contact/Contact";
 // import { Link } from "react-router-dom";
-
 function IntroSection() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  
   return (
     <div
       className={`p-4 bg-zinc-800 h-full overflow-hidden flex flex-col justify-center ${
@@ -25,156 +28,65 @@ function IntroSection() {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
+          {/* Sticky Navbar */}
+          <nav className="w-full  md:w-full  flex justify-between items-center">
+            <div className="font-mono  pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-blacks to-gray-700/80 bg-clip-text text-center text-2xl md:text-2xl sm:text-2xl  leading-none text-transparent dark:from-zinc-100 dark:to-slate-700/8">
+              Shubham Jangra{" "}
+            </div>
+            <div className="space-x-4">
+              <button className="bg-zinc-600 text-zinc-200 px-4 py-1 rounded-lg font-medium hover:bg-gray-700 transition">
+                <a href="#contact"> Let’s Talk</a>
+              </button>
+            </div>
+          </nav>
           <div className="w-full flex flex-col lg:flex-row items-center justify-end">
-            <div className="w-full pb-5 border-dashed lg:w-full lg:mb-0 lg:pr-8">
+            <div className="w-full pb-5 border-dashed my-6  lg:w-full lg:mb-0 lg:pr-8">
               <motion.div
                 data-aos="zoom-out"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
+                className=""
               >
-                <h1 className="text-left  overflow-hidden whitespace-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-serif text-zinc-200">
-                  hi! Coders I am shubham.
-                </h1>
-                <p className="text-left mt-2 w-fit py-1 px-3 rounded-lg overflow-hidden bg-blue-100 whitespace-nowrap text-sm sm:text-xl md:text-sm lg:text-md mb-4 text-blue-500">
-                  Web Developer & Designer
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 3 }}
+                >
+                  :
+                  <p className="my-5 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-blacks to-gray-700/80 bg-clip-text text-center text-5xl md:text-6xl sm:text-5xl  leading-none text-transparent dark:from-zinc-100 dark:to-slate-700/8">
+                    {" "}
+                    Let's craft exceptional digital experiences together.
+                  </p>
+                </motion.span>
+                <p className="text-center font-mono mt-10 whitespace-wrap text-sm  text-zinc-200">
+                  Explore my portfolio, from user interface and experience to
+                  prototyping and testing.
                 </p>
 
-                <p className="font-mono text-sm mt-8 text-left sm:text-lg md:text-sm mb-2 text-gray-300">
-                  -&gt; Practising since{" "}
-                  <span className="font-semibold text-[#5046e6]">2022</span>,
+                <p className="font-mono text-md mt-5 text-center sm:text-lg md:text-sm mb-2 text-gray-300">
+                  Practising since{" "}
+                  <span className="font-semibold text-[#5046e6]">2022</span>
                 </p>
-                <p className="font-mono text-sm mt-2 text-left sm:text-lg md:text-sm mb-2 text-gray-300">
-                  -&gt; I strive to craft intuitive and engaging user
-                  experiences that meet the evolving needs of the digital
-                  landscape.
-                </p>
-                <p className="font-mono text-sm mt-2 text-left sm:text-lg md:text-sm mb-2 text-gray-300">
-                  -&gt; I create beautiful, functional websites and applications
-                  with a focus on user experience and clean code.
+                <p className="font-mono text-sm mt-2 text-center sm:text-lg md:text-sm mb-2 text-gray-300">
+                  I strive to craft intuitive and engaging user experiences that
+                  meet the evolving needs of the digital landscape.
                 </p>
               </motion.div>
-              <div className="flex flex-wrap gap-4 my-8">
-                <button
-                  className="border-b border-black text-zinc-200 hover:bg-zinc-700 font-bold py-1 px-4 transition duration-300 ease-in-out"
-                  onClick={() => (window.location.href = "/about")}
-                >
-                  About...
-                </button>
-                <button
-                  className="border-b border-black text-zinc-200 hover:bg-zinc-700 font-bold py-1 px-4 transition duration-300 ease-in-out"
-                  onClick={() => (window.location.href = "/contact")}
-                >
-                  Contact...
-                </button>
-              </div>
-              <div className="mt-5 lg:mt-10 w-full overflow-hidden">
+              <div className="mt-2 lg:mt-10 w-full overflow-hidden">
                 <Slider />
-              </div>
-              <div className="flex flex-wrap gap-4 justify-center items-center p-2">
-                <div>
-                  <div className="p-6 rounded-xl border border-zinc-500">
-                    <ul className="space-y-2">
-                      <li>
-                        <div className="text-xl text-zinc-300 font-bold mb-2">
-                          Bachelor of Computer Science
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          MDU University, 2021-2025
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          Ganga Institute of Technology and Management
-                        </div>
-                        <button
-                          className="mt-4 border  border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white font-bold py-1 px-4 rounded-md transition duration-300 ease-in-out"
-                          onClick={() => (window.location.href = "/about")}
-                        >
-                          More...
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div className="p-6 rounded-xl border border-zinc-500">
-                    <ul className="space-y-2">
-                      <li>
-                        <div className="text-xl  text-zinc-300 font-bold mb-2">
-                          Contact
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          shubhamjangra1205@gmail.com || 7082545147
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          715/7 Ashoka colony LinePar Bahadurgarh Haryana
-                          (124507)
-                        </div>
-                        <button
-                          className="my-2 border border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white font-bold py-1 px-4 rounded-md transition duration-300 ease-in-out"
-                          onClick={() => (window.location.href = "/contact")}
-                        >
-                          More...
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="sm:col-span-2 p-6 rounded-xl border border-zinc-500">
-                  <div className="">
-                    <h4 className="text-xl text-zinc-300 font-bold text-left mb-2">
-                      Interests
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400 px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        Web Development
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400  px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        UI/UX Design
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400  px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        Artificial Intelligence
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400 px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        Photography
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400  px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        UpSkilling
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400 px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        Programming
-                      </li>
-                      <li
-                        data-aos="zoom-in"
-                        className="shadow-md shadow-zinc-700 bg-blue-400 px-3 text-zinc-50 font-bold font-mono py-2 rounded-3xl"
-                      >
-                        Travel
-                      </li>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </motion.div>
       </section>
+      {/* Skills-Section */}
+      <Skills id="skills" />
+      {/* About-section */}
+      <About id="about"/>
+      {/* Contact-Section */}
+      < Contact  id="contact"/>
     </div>
   );
 }

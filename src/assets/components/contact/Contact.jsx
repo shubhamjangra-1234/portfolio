@@ -9,20 +9,75 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="w-full bg-zinc-800  overflow-hidden"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={fadeIn}
+      id="contact"
+      className="w-full  overflow-hidden"
     >
       <div className="lg:ml-56 p-2">
         <div className=" max-w-7xl rounded-xl">
-          <p className=" p-2 text-sm text-gray-200">
-            <p className="text-xl text-left mx-2 my-2 border-b w-fit  border-dashed border-zinc-500  ">
-              Get in touch
-            </p>
+          <div className=" flex justify-between space-x-2 items-center  text-zinc-200 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
+            Get In Touch
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlSpace="preserve"
+              id="Layer_1"
+              width="54"
+              height="54"
+              fill="#000"
+              version="1.1"
+              viewBox="0 0 451.296 451.296"
+            >
+              <g id="SVGRepo_iconCarrier">
+                <circle
+                  cx="225.638"
+                  cy="225.638"
+                  r="225.638"
+                  fill="#EA8953"
+                ></circle>
+                <path
+                  d="M352.243 121.029c-1.796-1.909-4.326-3.114-7.143-3.114h-2.21L324.555 99.58c-2.022-1.975-4.795-3.244-7.851-3.244h-209.25c-6.112 0-11.095 4.983-11.095 11.142v236.329c0 3.274 1.434 6.175 3.673 8.2l97.481 97.481c9.221 1.148 18.594 1.807 28.126 1.807 124.627 0 225.658-101.031 225.658-225.658 0-1.919-.097-3.814-.145-5.721l-98.9-98.9z"
+                  opacity="0.1"
+                ></path>
+                <path
+                  fill="#3A556A"
+                  d="M107.473 96.355c-6.14 0-11.117 4.978-11.117 11.117v236.332c0 6.14 4.977 11.117 11.117 11.117h38.133V96.355z"
+                ></path>
+                <path
+                  fill="#FCD462"
+                  d="M344.213 180.682h-16.38v-62.779h16.38c5.914 0 10.708 4.794 10.708 10.708v41.363c0 5.914-4.794 10.708-10.708 10.708"
+                ></path>
+                <path
+                  fill="#44C4A1"
+                  d="M344.213 243.461h-16.379v-62.779h16.38c5.914 0 10.708 4.794 10.708 10.708v41.362c-.001 5.914-4.795 10.709-10.709 10.709"
+                ></path>
+                <path
+                  fill="#FFF"
+                  d="M344.213 306.239h-16.38v-62.778h16.38c5.914 0 10.708 4.794 10.708 10.708v41.363c0 5.913-4.794 10.707-10.708 10.707"
+                ></path>
+                <path
+                  fill="#27A2DB"
+                  d="M316.716 96.355h-171.11v258.566L324.562 99.599a11.08 11.08 0 0 0-7.846-3.244"
+                ></path>
+                <path
+                  fill="#2D93BA"
+                  d="M324.562 99.599 145.606 354.921h171.111c6.14 0 11.117-4.977 11.117-11.117V107.472a11.09 11.09 0 0 0-3.272-7.873"
+                ></path>
+                <g fill="#FFF">
+                  <path d="M279.176 251.066a273 273 0 0 1-8.081 5.752l-.282.189 28.196 41.436a280 280 0 0 0 8.337-7.099 3.78 3.78 0 0 0 .61-4.965l-23.402-34.389a3.784 3.784 0 0 0-5.378-.924M263.339 261.12c-11.318 1.512-24.094-4.448-33.805-15.941-12.868-15.229-17.512-36.382-11.534-50.686l-29.223-42.945c-7.265 4.417-13.873 9.318-14.55 12.878-8.376 44.054 56.219 144.615 100.911 148.293 3.577.294 10.467-4.016 17.171-9.026zM205.953 142.244a261 261 0 0 0-9.79 5.061l28.135 41.347.064-.044c2.673-1.819 5.645-3.72 8.538-5.515a3.786 3.786 0 0 0 1.13-5.352l-23.284-34.217a3.78 3.78 0 0 0-4.793-1.28"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <p className=" py-4 text-sm text-gray-200">
             Feel free to get in touch! I'm eager to hear from you. Contact me
             directly for any inquiries or collaborations.
           </p>
@@ -105,7 +160,7 @@ const Contact = () => {
         <h1 className="text-xl text-left mx-4 my-2 font-bold border-b border-dashed border-zinc-300 p-2 w-fit">
           Contact Details
         </h1>
-        <div className="flex  flex-wrap  justify-start items-center rounded-md border border-zinc-600  bg-white/5 mt-4">
+        <div className="flex  flex-wrap overflow-hidden  justify-start items-center rounded-md border border-zinc-600  bg-white/5 mt-4">
           <div>
             <div className="p-2 rounded-xl">
               <ul className="space-y-2">
@@ -115,7 +170,7 @@ const Contact = () => {
                     <span>
                       <p className="text-left text-xs text-zinc-500">mail</p>
                       <a
-                        className="text-md"
+                        className="text-sm text-wrap"
                         href=" shubhamjnagra1205@gmail.com"
                       >
                         {" "}

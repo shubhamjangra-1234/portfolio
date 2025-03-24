@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <>
       <button
-        className={`fixed top-4 right-4 z-50 ${
+        className={`fixed top-10 right-4 z-50 ${
           isLargeScreen ? "hidden" : ""
         } bg-zinc-900 shadow-md shadow-zinc-700 text-zinc-200 p-2 rounded-md`}
         onClick={toggleMenu}
@@ -140,38 +140,38 @@ const Navbar = () => {
             </div>
           </div>
           <div className="py-2">
-            <NavLink
-              to="/main"
+            <a
+              href="/main"
               className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
               <VscHome className="h-7 w-7 mr-8" />
               <p className="text-base">Home</p>
-            </NavLink>
+            </a>
 
-            <NavLink
-              to="/Skills"
+            <a
+              href="#skills"
               className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
               <LiaLaptopCodeSolid className="h-7 mr-7 w-8" />
               <p className="text-base">Skills</p>
-            </NavLink>
+            </a>
 
-            <NavLink
-              to="/about"
+            <a
+              href="#about"
               className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
               <CiUser className="h-7 w-7 mr-8" />
               <p className="">About</p>
-            </NavLink>
+            </a>
 
-            <NavLink
-              to="/contact"
+            <a
+              href="#contact"
               className="flex items-center border bg-white/5 border-zinc-700 my-2 px-2 py-2 hover:bg-gray-700 rounded backdrop-filter backdrop-blur-lg bg-opacity-30"
             >
               
               <CiMail className="h-7 w-7 mr-8  " />
               <p className=" text-base ">Contact</p>
-            </NavLink>
+            </a>
           </div>
         </div>
       </nav>
