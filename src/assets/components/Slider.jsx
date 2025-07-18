@@ -8,7 +8,7 @@ const brands = [
   },
   {
     name: "NodeJs",
-    logo: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    logo: "https://play-lh.googleusercontent.com/fSQ2dmyQPfqZAacdmLnA3UoUdaHgF0ADmbLVMXFiD_iTwVVJNi8PjBbe_RlZSAZEJMo=w240-h480-rw",
   },
   {
     name: "React",

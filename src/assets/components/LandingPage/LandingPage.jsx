@@ -33,7 +33,6 @@ function LandingPage() {
   }, [textData]);
   return (
     <div className="relatives bg-zinc-800 flex h-screen  w-full flex-col items-center justify-center overflow-hidden ">
-      <Meteors number={30} />
       <div className="w-full h-full  text-black">
         <div
           style={{ width: "100%", height: "600px", position: "relative" }}
@@ -77,7 +76,7 @@ function LandingPage() {
       </div>
 
       <a href="/main">
-        <button className="border-dashed border-zinc-300 z-10 font-mono absolute top-0 right-0 m-4 text-zinc-300  py-2 px-4 rounded-xl border  hover:transition duration-300 ease-in-out flex items-center transform hover:scale-95">
+        <button className="border border-zinc-300 z-10  absolute top-0 right-0 m-4 text-zinc-300  py-2 px-4 rounded-md border  hover:bg-zinc-700 flex items-center ">
           Get started
           <svg
             xmlns="http://www.w3.org/2000/svg"

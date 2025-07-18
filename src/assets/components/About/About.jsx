@@ -126,7 +126,8 @@ const About = () => {
                
 
                 <div className="my-8 text-left">
-                  <a href="https://drive.google.com/file/d/12ZirlCBB-PeLpOyjdRpm3A05ekMg7RzE/view?usp=drive_link">
+                  <a href=
+                  "https://drive.google.com/file/d/1Y3pf2XcDD-JRN3oH8n8gML2CeuFV8GQf/view?usp=sharing">
                     <button className="offset">
                       {" "}
                       <svg

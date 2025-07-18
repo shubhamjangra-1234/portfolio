@@ -40,21 +40,22 @@ function IntroSection() {
             </div>
           </nav>
           <div className="w-full flex flex-col lg:flex-row items-center justify-end">
-            <div className="w-full pb-5 border-dashed my-6  lg:w-full lg:mb-0 lg:pr-8">
+            <div className="w-full pb-5 border-dashed my-6  lg:w-full lg:mb-0 lg:pl-20">
               <motion.div
                 data-aos="zoom-out"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className=""
+                className=" "
               >
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 3 }}
+                  className=""
                 >
-                  :
+                  
                   <p className="my-5 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-blacks to-gray-700/80 bg-clip-text text-center text-5xl md:text-6xl sm:text-5xl  leading-none text-transparent dark:from-zinc-100 dark:to-slate-700/8">
                     {" "}
                     Let's craft exceptional digital experiences together.
