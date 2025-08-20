@@ -12,19 +12,19 @@ function Skills() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
   return (
-    <div className="p-2">
+    <div className="">
       <div
-        
+
         id="skills"
         className=" lg:ml-56 "
       >
         <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
-        className=" text-left  ">
-          <div className=" flex justify-between space-x-2 items-center  text-zinc-200 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
+          className=" text-left  ">
+          <div className=" flex justify-between space-x-2 items-center  text-zinc-800 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
             My Capabilities
             <svg
               width="64px"
@@ -85,8 +85,8 @@ function Skills() {
             </svg>
           </div>
 
-          <p className="text-zinc-300 text-center   text-sm font-sans">
-             I am trying to keep learning new Skills and technologies  I am practicing AS a web dev Since 2022 ,I have Gain a lot of
+          <p className="text-zinc-800 text-center text-sm font-sans">
+            I am trying to keep learning new Skills and technologies  I am practicing AS a web dev Since 2022 ,I have Gain a lot of
             skills and knowledge in dev Field.
           </p>
           <div className="sm:col-span-2 py-4 rounded-xl border-zinc-500">
@@ -94,43 +94,43 @@ function Skills() {
               <div className="flex flex-wrap gap-4">
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   Web Development
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   UI/UX Design
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   Problem Solving
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   Photography
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   UpSkilling
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   Programming
                 </li>
                 <li
                   data-aos="zoom-in"
-                  className="shadow-md shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
+                  className="shadow-sm shadow-zinc-800 bg-blue-100 px-3 text-zinc-700 font-mono py-2 rounded-3xl"
                 >
                   react
                 </li>
@@ -141,77 +141,95 @@ function Skills() {
         <div className="skills  flex justify-center flex-row">
           <div className="bars  flex-wrap justify-between align-middle flex-col">
             <li className="h-10 flex mb-4 justify-start items-center   ">
-              <h2 className="text-gray-200 font-bold font-sans text-2xl lg:text-2xl border-b border-dashed border-zinc-300 p-2">
+              <h2 className="text-gray-800 font-bold font-sans text-2xl lg:text-2xl border-b border-dashed border-zinc-800">
                 frontend
               </h2>
             </li>
             <li></li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit bg-green-100 text-green-700 p-1 rounded-sm px-4 font-bold font-mono  ">
                 html{" "}
               </h3>
-              <h2 className="text-right font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right font-mono text-red-500 text-sm mr-0">100%</h2>
               <span className="bar">
                 <span className="html"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 css
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="css "></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit  bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit  bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 javascript
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">90%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">90%</h2>
               <span className="bar">
                 <span className="javascript"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
-                react
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                ReactJS
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="react"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                NextJs
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
+              <span className="bar">
+                <span className="react"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                Redux
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
+              <span className="bar">
+                <span className="react"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 Tailwind
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="tailwind"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit sm:text-sm bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
-                Reactive Apps
+              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                UI&ux
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">90%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="html"></span>
               </span>
             </li>
-            <li className=" mx-2 ">
-              <h3 className="text-left w-fit bg-green-100  text-green-700 p-1 rounded-sm  px-2 font-bold font-mono  ">
-                UI&ux
+             <li className=" mx-2 ">
+              <h3 className="text-left w-fit sm:text-xs bg-green-100  text-green-700 p-1 rounded-xs  px-4 font-bold font-mono  ">
+                Reactive Apps
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">90%</h2>
               <span className="bar">
                 <span className="html"></span>
               </span>
             </li>
             <li></li>
             <li className="h-10 flex my-5 justify-start items-center   ">
-              <h2 className="text-gray-200 font-bold font-sans text-2xl lg:text-2xl border-b border-dashed border-zinc-300 p-2">
+              <h2 className="text-gray-800 font-bold font-sans text-2xl lg:text-2xl border-b border-dashed border-zinc-800">
                 backend
               </h2>
             </li>
@@ -220,7 +238,7 @@ function Skills() {
               <h3 className="text-left w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
                 node
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="node"></span>
               </span>
@@ -229,7 +247,7 @@ function Skills() {
               <h3 className="text-left w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
                 express
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="express"></span>
               </span>
@@ -238,7 +256,7 @@ function Skills() {
               <h3 className="text-left  sm:text-sm w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
                 Api Handeling
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="mongodb"></span>
               </span>
@@ -247,50 +265,86 @@ function Skills() {
               <h3 className="text-left w-fit text-violet-700 bg-violet-100 p-1 rounded-sm px-2  font-bold font-mono  ">
                 mongoDb
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="mongodb"></span>
               </span>
             </li>
 
             <li className="h-10 flex my-5 justify-start items-center   ">
-              <h2 className="text-gray-200 font-bold font-sans text-lg lg:text-2xl border-b border-dashed border-zinc-300 p-2">
+              <h2 className="text-gray-800 font-bold font-sans text-2xl lg:text-2xl border-b border-dashed border-zinc-800">
                 other skills
               </h2>
             </li>
             <li></li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 Git
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">80%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">80%</h2>
               <span className="bar">
                 <span className="git"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 Github
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="css"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                Sql
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                Vercel
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                Render
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
+                WordPress
+              </h3>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
+              <span className="bar">
+                <span className="css"></span>
+              </span>
+            </li>
+            <li className=" mx-2 ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 Deployment
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="css"></span>
               </span>
             </li>
             <li className=" mx-2 ">
-              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-2 font-bold font-mono  ">
+              <h3 className="text-left w-fit  text-zinc-700 bg-blue-100 p-1 rounded-sm  px-4 font-bold font-mono  ">
                 Libraries
               </h3>
-              <h2 className="text-right  font-mono text-red-500 mr-0">100%</h2>
+              <h2 className="text-right  font-mono text-red-500 mr-0 text-sm">100%</h2>
               <span className="bar">
                 <span className="css"></span>
               </span>
@@ -298,12 +352,12 @@ function Skills() {
           </div>
         </div>
         <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
         >
-          <p className="text-zinc-400 bg-zinc-700 rounded-xl text-sm p-4 text-left ">
+          <p className="text-white bg-blue-400 rounded-xl text-sm p-4 text-left ">
             I just trying to learn new things and be better day by day.
             Currently, I’m focused on hands-on projects that allow me to explore
             and apply new technologies. Working on personal projects and
@@ -312,26 +366,26 @@ function Skills() {
           </p>
         </motion.div>
         <motion.projects
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeIn}
         >
           <section className="flex flex-col items-start px-2 my-4 py-2 md:px-2 lg:px-2">
-            <h2 className="text-gray-200 text-left text-2xl mb-10 font-times border-b border-dashed border-zinc-300 font-bold tracking-tighter md:text-3xl/tight">
+            <h2 className="text-gray-900 text-left text-2xl mb-10 font-times border-b border-dashed border-zinc-800 font-bold tracking-tighter md:text-3xl/tight">
               Projects
             </h2>
 
             <span className="text-left text-sm rounded-sm text-blue-600 bg-blue-300 p-1 ">
               # Wide Range of Projects:
             </span>
-            <p className="text-left text-sm text-zinc-400 w-xl py-2 space-y-4">
+            <p className="text-left text-sm text-zinc-600 w-xl py-2 space-y-4">
               {" "}
               Extensive experience in developing various web applications
               focused on functionality and user experience.
             </p>
 
-            <div className="list-none text-left  text-zinc-400 text-sm w-xl space-y-4">
+            <div className="list-none text-left  text-zinc-600 text-sm w-xl space-y-4">
               <span className="text-left text-green-700 bg-green-300 p-1 rounded-sm ">
                 # Core Skills Demonstrated:
               </span>
@@ -359,14 +413,14 @@ function Skills() {
               <span className=" text-violet-700 bg-violet-300 p-1 rounded-sm ">
                 # MERN Stack Proficiency:
               </span>{" "}
-              <li className="text-left text-sm text-zinc-400 ">
+              <li className="text-left text-sm text-zinc-600 ">
                 Advanced skills across MongoDB, Express.js, React, and Node.js
                 for creating full-stack applications with scalability.
               </li>
             </div>
             <a href="https://github.com/shubhamjangra-1234" alt="github">
-              <div className=" flex justify-center border border-zinc-600 p-3 my-4 hover:bg-zinc-700 hover:scale-95 rounded-xl space-x-2 items-center w-fit  text-zinc-200 text-left font-bold font-times mb-5 text-sm">
-                Visit My GitHub 
+              <div className=" flex justify-center border border-zinc-800 p-3 my-4 hover:bg-zinc-300 hover:scale-95 rounded-xl space-x-2 items-center w-fit  text-zinc-800 text-left font-bold font-times mb-5 text-sm">
+                Visit My GitHub
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -384,7 +438,7 @@ function Skills() {
                     >
                       <g
                         id="Dribbble-Light-Preview"
-                        fill="#fff"
+                        fill="rgba(7, 7, 7, 1)"
                         transform="translate(-140 -7559)"
                       >
                         <g id="icons" transform="translate(56 160)">

@@ -1,10 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/no-unknown-property */
 import React from "react";
-import { FaSun } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
-import "./contact.css";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -24,7 +18,7 @@ const Contact = () => {
     >
       <div className="lg:ml-56 p-2">
         <div className=" max-w-7xl rounded-xl">
-          <div className=" flex justify-between space-x-2 items-center  text-zinc-200 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
+          <div className=" flex justify-between space-x-2 items-center  text-zinc-800 text-center py-2 font-bold font-times mb-5 text-2xl tracking-tighter md:text-4xl/tight">
             Get In Touch
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +71,7 @@ const Contact = () => {
               </g>
             </svg>
           </div>
-          <p className=" py-4 text-sm text-gray-200">
+          <p className=" py-4 text-sm text-zinc-800">
             Feel free to get in touch! I'm eager to hear from you. Contact me
             directly for any inquiries or collaborations.
           </p>
@@ -144,7 +138,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-md border border-zinc-600 bg-zinc-900 px-3 py-2 text-sm font-semibold text-zinc-100 shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="w-full rounded-md  bg-blue-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
                   Send
                 </button>
@@ -157,20 +151,20 @@ const Contact = () => {
             src="/reactimg/contact.png"
           />
         </div>
-        <h1 className="text-xl text-left mx-4 my-2 font-bold border-b border-dashed border-zinc-300 p-2 w-fit">
+        <h1 className="text-xl text-zinc-800 text-left  my-2 font-bold border-b border-dashed border-zinc-800 p-2 w-fit">
           Contact Details
         </h1>
-        <div className="flex  flex-wrap overflow-hidden  justify-start items-center rounded-md border border-zinc-600  bg-white/5 mt-4">
-          <div>
-            <div className="p-2 rounded-xl">
-              <ul className="space-y-2">
+        <div className="flex  flex-wrap overflow-hidden bg-zinc-100 p-2 justify-evenly items-center space-y-2 rounded-md border border-zinc-600  bg-white/5 mt-4">
+
+            <div className="p-2 rounded-xl shadow-sm bg-white shadow-zinc-700">
+              <div className="space-y-2 ">
                 <li>
-                  <div className=" flex items-center space-x-4 rounded-md border border-zinc-600 p-4  bg-white/5  text-zinc-100">
-                    <Mail className="text-zinc-500 p-0.5 bg-blue-100 rounded-full" />{" "}
+                  <div className=" flex items-center space-x-4  px-6 py-3  text-zinc-100">
+                    <Mail className="text-zinc-500 text-2xl p-1  " />{" "}
                     <span>
-                      <p className="text-left text-xs text-zinc-500">mail</p>
+                      <p className="text-left font-bold text-md text-zinc-800">mail</p>
                       <a
-                        className="text-sm text-wrap"
+                        className="text-xs text-wrap text-zinc-800"
                         href=" shubhamjnagra1205@gmail.com"
                       >
                         {" "}
@@ -179,38 +173,35 @@ const Contact = () => {
                     </span>
                   </div>
                 </li>
-              </ul>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className="p-2 rounded-xl">
-              <ul className="space-y-2">
-                <li>
-                  <div className="flex items-center space-x-4 rounded-md border border-zinc-600 p-4 bg-white/5  text-zinc-100 ">
-                    <Phone className="text-zinc-500 p-1 bg-blue-100 rounded-full" />
-                    <span>
-                      <p className="text-left text-xs text-zinc-500">Phone</p>
+          
+          
+            <div className="p-2 rounded-xl shadow-sm bg-white shadow-zinc-700 ">
+              <div className="space-y-2 ">
+                <div className=" flex items-center space-x-4 px-6 py-3  text-zinc-100">
+                  <Phone className="text-zinc-500 text-2xl p-1 " />
+                  <span>
+                    <p className="text-left font-bold text-md text-zinc-800">Phone</p>
                       <a
-                        className="text-md"
+                        className="text-xs text-zinc-800"
                         href=" shubhamjnagra1205@gmail.com"
                       >
                         {" "}
-                        7082545147
+                        +91 7082545147
                       </a>
                     </span>
-                  </div>
-                  <div className="text-sm text-muted-foreground"></div>
-                </li>
-              </ul>
+                  </div>                
+              </div>
             </div>
-          </div>
-          <div className="sm:col-span-2 p-2 rounded-xl ">
-            <div className="">
-              <div className="flex items-center space-x-4  rounded-md border border-zinc-600 p-4  bg-white/5  text-zinc-100 ">
-                <MapPin className="text-zinc-500 p-0.5 bg-blue-100 rounded-full" />
+          
+          <div className=" p-2 rounded-xl shadow-sm bg-white shadow-zinc-700 ">
+              <div className="space-y-2 ">
+              <div className=" flex items-center space-x-4  px-6 py-3  text-zinc-100">
+                <MapPin className="text-zinc-500 text-2xl p-1 " />
                 <span>
-                  <p className="text-left text-xs text-zinc-500">Address</p>
-                  <a className="text-md" href=" shubhamjnagra1205@gmail.com">
+                  <p className="text-left text-ms font-bold text-zinc-800">Address</p>
+                  <a className="text-xs text-zinc-800" href=" shubhamjnagra1205@gmail.com">
                     Bahadurgarh , Haryana (124507)
                   </a>
                 </span>
@@ -228,7 +219,7 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className=" flex  justify-center align-middle flex-col space-y-3 "></div>
+          
         </div>
       </div>
     </motion.div>

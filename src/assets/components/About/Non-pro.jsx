@@ -22,20 +22,20 @@ export default function NonProfessionalLife() {
     className="my-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
         {hobbies.map((hobby) => (
-          <div key={hobby.id} className="flex border border-zinc-700 flex-col items-center p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105 text-center">
-            <span className="text-5xl text-gray-300 mb-4">{hobby.icon}</span>
-            <span className="text-lg font-medium text-gray-500 mb-2">{hobby.name}</span>
-            <p className="text-sm text-gray-300">{hobby.description}</p>
+          <div key={hobby.id} className="flex border border-zinc-700 flex-col items-center p-6 shadow-lg rounded-lg transition-transform transform hover:scale-95 text-center">
+            <span className="text-5xl text-purple-600 mb-4">{hobby.icon}</span>
+            <span className="text-lg font-medium text-blue-800 mb-2">{hobby.name}</span>
+            <p className="text-xs text-gray-900">{hobby.description}</p>
           </div>
         ))}
       </div>
       <div className="mt-12 text-center">
-        <h3 className="  text-gray-400">Check Out My Photography Work</h3>
+        <h3 className=" text-sm text-blue-800">Check Out My Photography Work</h3>
         <a
           href="https://www.instagram.com/tasweereyn?igsh=c2Uwb3FxMnJzaGhn"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-block text-sm  border border-zinc-700 text-zinc-400 px-6 py-2 rounded-lg shadow-md hover:bg-zinc-700 transition-all"
+          className="mt-4 inline-block text-sm border border-zinc-700 text-blue-800 px-6 py-2 rounded-md  transition-all"
         >
           View on Instagram
         </a>
