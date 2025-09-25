@@ -1,102 +1,123 @@
-// /* eslint-disable no-unused-vars */
-// import React from "react";
-import { IoCallOutline } from "react-icons/io5";
-import { SlSocialInstagram, SlSocialGithub } from "react-icons/sl";
-function Footer() {
+import React from "react";
+import { Mail, Phone, Github, MapPin } from "lucide-react";
+
+export default function SiteFooter() {
   return (
-    <>
-      <footer className=" h-full bg-zinc-950  text-white py-8 transition-all duration-300 ease-in-out">
-        <div className="w-5/6  container mx-auto lg:ml-56 ">
-          <div className="flex flex-wrap justify-between items-start">
-            <div className="w-full sm:w-1/2  lg:w-1/3 mb-6 lg:mb-0">
-              <div className=" text-left ">
-                <h2 className="text-2xl font-bold text-gray-400 ">
-                  Shubham Jangra
-                </h2>
+    <footer className="mt-12 bg-gradient-to-r from-violet-700 via-indigo-700 to-cyan-600 text-white">
+      <div className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div className="space-y-3">
+            <h3 className="text-2xl font-extrabold tracking-tight">Shubham Jangra</h3>
+            <p className="text-sm text-white/90">Frontend Engineer — crafting delightful interfaces since 2022</p>
+            <div className="mt-4 flex items-center gap-3">
+              <a
+                href="mailto:shubhamjnagra1205@gmail.com"
+                aria-label="Email"
+                className="flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm hover:bg-white/20 transition"
+              >
+                <Mail className="h-4 w-4" />
+                <span className="text-sm">Email</span>
+              </a>
+
+              <a
+                href="tel:+917082545147"
+                aria-label="Phone"
+                className="flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm hover:bg-white/20 transition"
+              >
+                <Phone className="h-4 w-4" />
+                <span className="text-sm">Call</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:items-center">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/90 mb-3">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-white/90">
+              <li>
+                <a href="/main" className="hover:underline hover:text-white transition">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:underline hover:text-white transition">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:underline hover:text-white transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:underline hover:text-white transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            <div className="mt-6 md:mt-10 flex gap-3">
+              <a
+                href="https://github.com/shubhamjangra-1234"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="rounded-full bg-white/10 p-2 hover:bg-white/20 transition"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/ig.shubham.jangra/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                className="rounded-full bg-white/10 p-2 hover:bg-white/20 transition"
+              >
+                {/* Instagram SVG */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.5" />
+                  <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+              </a>
+
+              <a
+                href="tel:+917082545147"
+                aria-label="Call"
+                className="rounded-full bg-white/10 p-2 hover:bg-white/20 transition"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
+          <div className="md:text-right">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/90 mb-3">Contact Details</h4>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center gap-3 justify-start md:justify-end">
+                <Mail className="h-4 w-4 text-white/90" />
+                <a href="mailto:shubhamjnagra1205@gmail.com" className="text-white/90 hover:underline">
+                  shubhamjnagra1205@gmail.com
+                </a>
               </div>
-              <p className="mt-2 text-zinc-400">Practicing since 2022</p>
-            </div>
-            {/* <div className="w-full sm:w-1/2 lg:w-1/3 mb-6 lg:mb-0">
-              <h3 className="text-xl text-blue-400 font-semibold mb-4">
-                Contacts
-              </h3>
-              <ul>
-                <li className="text-left text-zinc-400">
-                  Email: Shubhamjangra1205@gmail.com
-                </li>
-                <li className="text-left text-zinc-400">
-                  Phone: +91 7082545147{" "}
-                </li>
-                <li className="text-left text-zinc-400">
-                  Address: Ashoka colony, line par, bahadurgarh, jhajjar(124507)
-                </li>
-              </ul>
-            </div> */}
-            <div className="w-full sm:w-1/2 lg:w-1/3">
-              <h3 className="text-sm font-bold text-zinc-400  my-2">
-               Quick Links
-              </h3>
-              <ul>
-                <li>
-                  <a href="/main" className="hover:text-gray-300 text-xs text-zinc-400">
-                    home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#skills"
-                    className="hover:text-gray-300 text-xs text-zinc-400"
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    className="hover:text-gray-300 text-xs text-zinc-400"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="hover:text-gray-300 text-xs text-zinc-400"
-                  >
-                    contact
-                  </a>
-                </li>
-              </ul>
+
+              <div className="flex items-center gap-3 justify-start md:justify-end">
+                <Phone className="h-4 w-4 text-white/90" />
+                <a href="tel:+917082545147" className="text-white/90 hover:underline">+91 7082545147</a>
+              </div>
+
+              <div className="flex items-center gap-3 justify-start md:justify-end">
+                <MapPin className="h-4 w-4 text-white/90" />
+                <span className="text-white/90">Bahadurgarh, Haryana (124507)</span>
+              </div>
             </div>
           </div>
-          
-          <div className="flex flex-col items-center">
-            <p className="text-zinc-400  font-bold my-4">Reach Out Across the cosmos</p>
-            <div className="flex space-x-4">
-             
-              <ul className="social-media flex space-x-5 justify-evenly my-2">
-                                <a href="https://github.com/shubhamjangra-1234">
-                                  <SlSocialGithub className="text-2xl" />
-                                </a>
-                                <a href="https://www.instagram.com/ig.shubham.jangra/">
-                                  <SlSocialInstagram className="text-2xl" />
-                                </a>
-                                <a href="tel:7082545147" target="_blank">
-                                  <IoCallOutline className="text-2xl" />
-                                </a>
-                              </ul>
-             
-            </div>
-            <div className="mt-8 text-center">
-              <p className="text-zinc-400">&copy; {new Date().getFullYear()} Shubham Jangra. Built with love  and React</p>
-            </div>
-          </div>
-          
         </div>
-      </footer>
-    </>
+
+        <div className="mt-8 border-t border-white/10 pt-6 text-center text-sm text-white/80">
+          © {new Date().getFullYear()} Shubham Jangra. Built with ♥ and React.
+        </div>
+      </div>
+    </footer>
   );
 }
-
-export default Footer;
-

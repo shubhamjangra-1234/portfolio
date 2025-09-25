@@ -1,93 +1,87 @@
-import { useState, useEffect, useMemo } from "react";
-import { motion } from "framer-motion";
-import "./Landing.css";
-function LandingPage() {
-  // Define an object with the text data
-  const textData = useMemo(
-    () => ({
-      0: "Web Designing",
-      1: "React Dev",
-      2: "NextJs Dev",
-      3: "Development",
-      4: "Deployment",
-      5: "Frontend",
-      6: "Backend",
-      7: "Mern Stack",
-    }),
-    []
+import { useEffect, useMemo, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+export default function Landing() {
+  const skills = useMemo(
+    () => ["Web Designing", "React Dev", "NextJs Dev", "Frontend", "Backend", "MERN Stack"],
+    [],
   );
 
-  // Set the initial state for the text and an index to track the current text
-  const [textIndex, setTextIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    // Update the text every 2 seconds
-    const interval = setInterval(() => {
-      setTextIndex(
-        (prevIndex) => (prevIndex + 1) % Object.keys(textData).length
-      );
-    }, 2000);
+    const t = setInterval(() => setIndex((i) => (i + 1) % skills.length), 2200);
+    return () => clearInterval(t);
+  }, [skills.length]);
 
-    // Clean up the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, [textData]);
   return (
-    <div className="relatives  flex h-screen  w-full flex-col items-center justify-center overflow-hidden ">
-      <div className="w-full h-full  text-black">
-        <motion.div
+    <div className="relative flex h-screen w-full items-center justify-center bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+      {/* subtle animated shapes */}
+      <motion.div
+        aria-hidden
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="pointer-events-none absolute -left-10 -top-8 h-56 w-56 rounded-full bg-gradient-to-br from-violet-300/30 to-cyan-300/20 blur-3xl"
+      />
+
+      <motion.div
+        aria-hidden
+        animate={{ x: [0, 10, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="pointer-events-none absolute -right-12 -bottom-10 h-64 w-64 rounded-full bg-gradient-to-br from-rose-300/25 to-amber-200/15 blur-3xl"
+      />
+
+      <main className="relative z-10 mx-auto w-full max-w-3xl px-6 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="mt-6 text-3xl  leading-tight tracking-tight text-slate-900 sm:text-4xl md:text-xl"
+        >
+          Hi, I’m
+          <br />
+          <span className="bg-gradient-to-r from-violet-600 md:text-4xl to-cyan-400 bg-clip-text text-transparent">Shubham Jangra</span>
+        </motion.h1>
+
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-          id="fixedContent"
-          className="fixed inset-0  m-auto  flex flex-col items-center justify-center bg-opacity-50 pointer-events-none"
-          style={{ height: "85vh" }}
+          transition={{ delay: 0.22, duration: 0.6 }}
+          className="mt-4 max-w-xl text-md text-slate-700 mx-auto"
         >
-          <div className="p-2">
-            <h2 className="text-zinc-800 text-center mb-4 font-mono text-xl ">
-              Hello! , I am{" "}
-            </h2>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 3 }}
-              className=" pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-blacks to-gray-700/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-zinc-900 dark:to-slate-700/10"
+          I design and build beautiful, high-performance web experiences.
+        </motion.p>
+
+        <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 6 }}
+              transition={{ duration: 0.25 }}
+              className="rounded-lg border border-slate-200 bg-white/60 px-4 py-2 text-sm font-medium text-slate-800 shadow-sm"
             >
-              Shubham Jangra
-            </motion.span>
-          </div>
-          <p className="font-mono text-xl text-zinc-500 text-center mt-2">
-            Unlock Your Web Experience
-          </p>
-          <span className="flex justify-between items-center mt-4">
-            <button className="h-8 ml-3 border border-zinc-800 rounded-lg opacity-50">
-              <p className="px-2 text-zinc-800 font-mono ">
-                {textData[textIndex]}
-              </p>
-            </button>
-          </span>
-        </motion.div>
-      </div>
-      <a href="/main">
-        <button className="z-10  absolute top-0 right-0 m-4 text-zinc-800  py-2 px-4  flex items-center ">
-          Get started
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+              {skills[index]}
+            </motion.div>
+          </AnimatePresence>
+
+          <a
+            href="/main"
+            aria-label="Enter site"
+            className="group flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 px-5 py-3 text-sm font-semibold text-white shadow-lg transition-transform hover:-translate-y-0.5 sm:w-auto"
           >
-            <path
-              fillRule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
-      </a>
+            Explore 
+            <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="mt-6 text-sm text-slate-600">
+          Available for freelance • Remote friendly
+        </motion.p>
+      </main>
     </div>
   );
 }
-
-export default LandingPage;
