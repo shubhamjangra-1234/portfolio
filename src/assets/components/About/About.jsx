@@ -24,6 +24,13 @@ export default function AboutWork() {
       tech: ["Next.js", "React", "Tailwind"],
       image: "/images/check-in-360.png",
     },
+    {
+    title: "CryptoDash (React + Vite)",
+    desc: "A modern cryptocurrency dashboard with real-time market data, charts, categories, and coin insights. Built with optimized performance, code-splitting, and scalable architecture.",
+    repo: "https://crypto-dash-livid-seven.vercel.app/",
+    tech: ["React", "Vite", "TanStack Query", "Tailwind", "Chart.js"],
+    image: "blob:https://crypto-dash-livid-seven.vercel.app/8634f41f-dfd1-454d-959b-b4bf93fd03bb",
+  },
   ];
 
   return (
