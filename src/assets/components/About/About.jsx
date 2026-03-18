@@ -44,7 +44,7 @@ export default function AboutWork() {
 
       </div>
 
-      <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-4">
+      <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {projects.map((p) => (
           <article key={p.title} className="rounded-2xl  border border-slate-100 bg-white p-4 shadow-sm">
             <div className="h-40 w-full rounded-md bg-slate-100 shadow-sm overflow-hidden">
